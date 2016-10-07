@@ -40,13 +40,13 @@ DOL框架能够使得应用程序自动地映射到多处理架构平台上，�
 	
 	运行configure，进行环境测试 $ sudo ../configure CXX=g++ --disable-async-updates 运行成功后的截图如下
 	
-	![configure](/Users/apple/Documents/1.png)
+	![configure](http://a1.qpic.cn/psb?/V12QVqkX2sMUU9/oip5QEizViJ9l0nQ86kI17vgkNt*3OdPNA3Ssh.rDxc!/b/dKsAAAAAAAAA&bo=bwLmAAAAAAADB6k!&rf=viewer_4)
 	
 	进行编译 $ sudo make install 然后回到上级目录 $ cd .. 可以看到文件目录下多了文件include,lib-linux64(若是32位系统则是lib-linux)
 	
 	通过$ pwd命令得到当前所在的路径，并记录下来，例如我的路径为/home/parallels/systemc-2.3.1
 	
-	![path](/Users/apple/Documents/2.png)
+	![path](http://a1.qpic.cn/psb?/V12QVqkX2sMUU9/5B*2DB9dRUaBsii.Yo45pigmMG*16HSRQN102hBm920!/b/dPYAAAAAAAAA&bo=hgEfAAAAAAADB7o!&rf=viewer_4)
 	
 5. 编译dol
 
@@ -60,11 +60,11 @@ DOL框架能够使得应用程序自动地映射到多处理架构平台上，�
 	
 	将上面省略的...部分修改为上一步中记录的工作路径（第二句话中，64为系统需要将lib-linux改为lib-linux64）
 	
-	![modify](/Users/apple/Documents/3.png)
+	![modify](http://a1.qpic.cn/psb?/V12QVqkX2sMUU9/7PHZEL7EEM9qAUYOvXCPM.EMuXfbRCMEiTtnZhbFjH8!/b/dLEAAAAAAAAA&bo=WQMgAAAAAAADB1g!&rf=viewer_4)
 	
 	进行编译 $ sudo ant -f build_zip.xml all 编译成功后如图所示会出现build successful
 	
-	![dol](/Users/apple/Documents/4.png)
+	![dol](http://a1.qpic.cn/psb?/V12QVqkX2sMUU9/VzxL5XtTSsaGxR2xeqjxKNYXsJZVT7rUBDOFHmgeDeA!/b/dPYAAAAAAAAA&bo=CgEzAAAAAAADBxo!&rf=viewer_4)
 	
 6. 测试
 
@@ -76,7 +76,7 @@ DOL框架能够使得应用程序自动地映射到多处理架构平台上，�
 	
 	成功的结果如图所示
 	
-	![success](/Users/apple/Documents/5.png)
+	![success](http://a1.qpic.cn/psb?/V12QVqkX2sMUU9/H.vWMi538MGnum*V8pdRaADf3l4pGAU*UeQYCBSOdGk!/b/dLEAAAAAAAAA&bo=jwFWAQAAAAADB*s!&rf=viewer_4)
 	
 ###### 自己遇到的问题以及解决办法和自己觉得需要注意的事项
 1. 再修改文件build_zip.xml的时候，需要用命令$ sudo gedit build_zip.xml来修改保存文件，但我输入这条指令之后，会出现如下错误：
@@ -96,7 +96,7 @@ DOL框架能够使得应用程序自动地映射到多处理架构平台上，�
 	之后回想起来也的确是有印象，当自己一开始装jdk的时候，装完了却有一个warning，大致意思是说有一些部分没有安装成功，当时想着之后有错再看所以就没管它。
 
 3. 自己觉得在整个安装步骤中，能加上sudo的就加上sudo，不要省略掉了。自己在有些步骤中有省略掉sudo，结果都是有报错的，例如：
-	![sudo](/Users/apple/Documents/6.png)但加上sudo后就能够成功编译了。
+	![sudo](http://a2.qpic.cn/psb?/V12QVqkX2sMUU9/rlUvnQS3wSQ0lJu6RsCeo0D28i3cRKQORsCbe108qEs!/b/dK8AAAAAAAAA&bo=zgJWAAAAAAADB7g!&rf=viewer_4)但加上sudo后就能够成功编译了。
 ***
 ### 实验感想
 * 当在实验过程出现问题后，要学会自己去查找资料解决。比如说当我遇到上面第一个问题的时候，想问别人怎么解决，但他们都没有遇到这个问题，所以只能自己上网去搜。其实网上遇到这个问题的人挺多的，也有关于这个问题的解释以及具体解决办法。最主要的是，在自己查询资料的过程中，自己还知道了其他的知识，例如linux中使用gedit时经常遇到的问题以及解决办法；另外，学会如何从报错的信息中找到重点去网上搜索解决办法，我觉得是一件挺重要的事情。
