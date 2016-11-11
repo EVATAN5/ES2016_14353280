@@ -48,3 +48,21 @@
 	rosinstall是在ROS中使用非常频繁的命令，用这个命令可以很容易去下载许多ROS数据包。
 	
 	$ sudo apt-get install python-rosinstall
+	
+***
+
+####检验是否安装成功
+
+1. 输入命令$ roscore
+
+2. $ rosrun turtlesim turtlesim_node
+
+	会出来如下的乌龟：![11](http://a2.qpic.cn/psb?/V12QVqkX2sMUU9/7qW8gYVs8zDE9q5Jg8pIGsXhA7CBR*cesYtHzSHIaBU!/m/dI0BAAAAAAAAnull&bo=XQBPAAAAAAADBzA!&rf=photolist&t=5)
+
+3. $ rosrun turtlesim turtle_teleop_key
+	
+	此步会使得乌龟运动：![22](http://a3.qpic.cn/psb?/V12QVqkX2sMUU9/KkpVmott7AGg8Xkxg89Jc5bJSd*QbO5JHZMKwmfqwV4!/m/dAoBAAAAAAAAnull&bo=wwCsAAAAAAADB00!&rf=photolist&t=5)
+
+4. $rosrun rqt_graph rqt_graph
+
+	最后会出现下图![33](http://a4.qpic.cn/psb?/V12QVqkX2sMUU9/eJeAJDweA0d2me.xXZZYnvHobvDHYU1oDuDNU8dzljI!/m/dGcBAAAAAAAAnull&bo=PQOJAQAAAAADB5Q!&rf=photolist&t=5)
